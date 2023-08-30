@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Nrupatungan/huddle-landing-page)
-- Live Site URL: [Add live site URL here](https://nrupatungan.github.io/huddle-landing-page/)
+- Solution URL: [My solution](https://github.com/Nrupatungan/huddle-landing-page)
+- Live Site URL: [Live site](https://nrupatungan.github.io/huddle-landing-page/)
 
 ## My process
 
@@ -47,9 +47,39 @@ Users should be able to:
 
 
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+:root{
+    /* colors */
+    --violet : hsl(257, 40%, 49%);
+    --magenta : hsl(300, 69%, 71%);
+
+    /* font family */
+    --poppins: 'Poppins', sans-serif;
+    --open-sans: 'Open Sans', sans-serif;
+
 }
+
+body{
+        background: url(./images/bg-desktop.svg) no-repeat;
+        background-size: cover;
+        background-color: var(--violet);
+        grid-template-areas: 
+            "h . ."
+            "m m m"
+            ". . f";
+    }
+
+header{
+  grid-area: h;
+}
+
+main{
+  grid-area: m;
+}
+
+footer{
+  grid-area: f;
+}
+
 ```
 
 If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
